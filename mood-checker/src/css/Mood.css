@@ -1,0 +1,71 @@
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    min-height: 80vh;
+    background: #f7f7fb;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+    color: #5b21b6;
+    margin-bottom: 24px;
+  }
+  
+  .input-box {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 1rem;
+    border: 1px solid #c4b5fd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  .input-box:focus {
+    border-color: #a78bfa;
+    box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.4);
+  }
+  
+  .btn-primary {
+    background: linear-gradient(to right, #7f5af0, #6246ea);
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background: #513cd9;
+  }
+  
+  .btn-primary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .result-box {
+    margin-top: 30px;
+    background: #f3e8ff;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd6fe;
+    color: #4c1d95;
+    font-size: 1.1rem;
+  }
+  
