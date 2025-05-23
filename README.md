@@ -37,16 +37,5 @@ Add your deployed app link here once available.
    git clone https://github.com/yourusername/mindmate.git
    cd mindmate
 
-
-mindmate/
-├── public/
-├── src/
-│   ├── assets/           # Images, logos
-│   ├── components/       # Navbar, Footer, ProtectedRoute, etc.
-│   ├── context/          # Authentication context and hooks
-│   ├── css/              # CSS files (Navbar.css, Footer.css, global styles)
-│   ├── pages/            # Home, Mood, MoodHistory, Recommendations, Login, Signup
-│   ├── App.jsx           # Main app component with routing
-│   └── index.js          # React entry point
-├── package.json
-└── README.md
+## Link
+https://ai-project-pink-delta.vercel.app/
