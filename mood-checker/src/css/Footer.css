@@ -1,0 +1,49 @@
+/* Footer.css or your global CSS */
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-container {
+  flex: 1 0 auto; /* Grow but do not shrink */
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1; /* Make main content grow to fill space */
+}
+
+footer {
+  width: 100%;
+  background-color: #f9fafb; /* light neutral */
+  border-top: 1px solid #e5e7eb; /* soft gray */
+  color: #4b5563; /* medium gray */
+  font-size: 0.875rem; /* 14px */
+  padding: 1rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.05);
+  user-select: none;
+  flex-shrink: 0; /* Prevent footer from shrinking */
+  transition: background-color 0.3s ease;
+}
+
+footer:hover {
+  background-color: #f3f4f6; /* slightly darker on hover */
+}
+
+/* Optional: responsive font size */
+@media (max-width: 640px) {
+  footer {
+    font-size: 0.75rem; /* 12px on small screens */
+    padding: 0.75rem 1rem;
+  }
+}

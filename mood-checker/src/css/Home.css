@@ -95,3 +95,154 @@
     color: #666;
   }
   
+  /* Add below existing styles */
+
+.interactive-grid {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.interactive-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+.interactive-card:hover {
+  transform: translateY(-5px);
+}
+
+.interactive-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.interactive-info {
+  padding: 20px;
+}
+
+.interactive-info h3 {
+  font-size: 20px;
+  color: #2c2c2c;
+  margin-bottom: 10px;
+}
+
+.interactive-info p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.secondary-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #6b46c1;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.secondary-button:hover {
+  background-color: #553c9a;
+}
+
+@media (max-width: 768px) {
+  .interactive-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* ========== Responsive Media Queries ========== */
+
+@media (max-width: 1024px) {
+  .home-title {
+    font-size: 36px;
+  }
+
+  .home-subtitle {
+    font-size: 18px;
+  }
+
+  .feature-card {
+    flex: 1 1 100%;
+  }
+
+  .features-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    padding: 40px 15px;
+  }
+
+  .home-logo {
+    width: 90px;
+    margin-bottom: 15px;
+  }
+
+  .home-title {
+    font-size: 30px;
+  }
+
+  .home-subtitle {
+    font-size: 16px;
+  }
+
+  .primary-button,
+  .secondary-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .interactive-card img {
+    height: 160px;
+  }
+
+  .interactive-info h3 {
+    font-size: 18px;
+  }
+
+  .interactive-info p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 24px;
+  }
+
+  .home-subtitle {
+    font-size: 15px;
+  }
+
+  .interactive-card {
+    max-width: 100%;
+  }
+
+  .feature-card {
+    padding: 20px 15px;
+  }
+
+  .interactive-info h3 {
+    font-size: 16px;
+  }
+
+  .interactive-info p {
+    font-size: 13px;
+  }
+}

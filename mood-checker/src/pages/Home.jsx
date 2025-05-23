@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.jpeg"; // Import the logo from the assets folder
-import "../css/Home.css"; // Import the CSS for styling
+import logo from "../assets/logo.jpeg";
+import moodImg from "../assets/mood-history.jpg"; // Add a relevant mood history image
+import recImg from "../assets/recommendations.jpg"; // Add a visual for recommendations
+import "../css/Home.css";
 
 export default function Home() {
   return (
     <div className="home-container">
       <div className="home-content">
-        {/* Logo Section */}
         <header className="home-header">
           <img src={logo} alt="MindMate Logo" className="home-logo" />
         </header>
@@ -37,6 +38,31 @@ export default function Home() {
             <div className="feature-icon">🔒</div>
             <h3>Privacy Focused</h3>
             <p>Your data stays secure and confidential</p>
+          </div>
+        </div>
+
+        {/* Interactive Feature Cards */}
+        <div className="interactive-grid">
+          <div className="interactive-card">
+            <img src={moodImg} alt="Mood History" />
+            <div className="interactive-info">
+              <h3>Visual Mood History</h3>
+              <p>Track your emotional journey and discover patterns over time.</p>
+              <Link to="/history" className="secondary-button">
+                View History →
+              </Link>
+            </div>
+          </div>
+
+          <div className="interactive-card">
+            <img src={recImg} alt="Recommendations" />
+            <div className="interactive-info">
+              <h3>Smart Recommendations</h3>
+              <p>Movies and books matched to your collective mood trends.</p>
+              <Link to="/recommendations" className="secondary-button">
+                Explore Now →
+              </Link>
+            </div>
           </div>
         </div>
       </div>
